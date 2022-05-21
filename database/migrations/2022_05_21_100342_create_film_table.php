@@ -24,8 +24,8 @@ return new class extends Migration
             $table->decimal('rental_rate', $precision = 4, $scale = 2);
             $table->smallInteger('length');
             $table->decimal('replacement_cost', $precision = 5, $scale = 2);
-            $table->enum('rating',[]);
-            $table->set('special_features',[]);
+            $table->enum('rating',['5']);
+            $table->set('special_features',['2d','3d']);
             $table->timestamp('lat_update');
         });
     }
